@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">MyLibrary</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+      <a href="search.html">Search</a>
+      <a href="book_module.html" class="active">Book Module</a>
+    </div>
+  </nav>
+   
+<div class="form-container">
+  <h2>Add / Update Book</h2>
+  <form id="bookForm">
+    <input type="text" id="bookId" placeholder="Book ID" required>
+    <input type="text" id="title" placeholder="Title" required>
+    <input type="text" id="author" placeholder="Author" required>
+    <input type="text" id="publisher" placeholder="Publisher" required>
+    <select id="availability" required>
+      <option value="">-- Availability --</option>
+      <option value="Available">Available</option>
+      <option value="Issued">Issued</option>
+    </select>
+    <button type="submit" class="btn">Save Book</button>
+  </form>
+</div>
+
+<div class="dashboard">
+  <h2>Book Records</h2>
+  <ul id="bookList">
+    <!-- Book records will appear here dynamically -->
+  </ul>
+</div>
+
+    
+</body>
+</html>
